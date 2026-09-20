@@ -1,19 +1,21 @@
 # ARA1D
 
-## Week 2–3 findings — Level 0/1 kernels on Ara
+## Week 2–3 findings Level 0/1 kernels on Ara
 
-**Project:** Closing the Efficiency Gap Between General-Purpose RISC-V Vector Coprocessors and Fixed-Function Video Hardware
+**Project:** Closing the Efficiency Gap Between General Purpose RISC V Vector Coprocessors and Fixed Function Video Hardware
 **Author:** Mohd Zaid · **Guide:** Prof. Sujay Deb (IIIT Delhi) · **Repo:** [MohdZaid0205/ara1d](https://github.com/MohdZaid0205/ara1d)
 **Covers:** Week 2 (extracted kernels) and Week 3 (Ara setup + baseline profiling), Level 0/1 kernels only
 
 > TODO: implement remaining level 2 and 3 functions and their profiling
+> ![Progression](res/fig1_kernel_status.svg)
+
 
 ## Summary
 
-- **All 5 Level 0/1 kernels are ported and verified on Ara RTL:** `ipred_v`, `ipred_h`, `ipred_paeth`, `cfl_pred`, `blend` — **107/107 test cases bit-exact** against the C reference.
+- **All 5 Level 0/1 kernels are ported and verified on Ara RTL:** `ipred_v`, `ipred_h`, `ipred_paeth`, `cfl_pred`, `blend`  **107/107 test cases bit-exact** against the C reference.
 - **RVV wins from 16×16 upward on every kernel, but loses on 4×4 for three of five** (VLEN=1024): `ipred_v` 0.36×, `ipred_paeth` 0.60×, `cfl_pred` 0.70×. The per-row cost is not amortised when rows are only 4–8 pixels wide.
 - **RVV cost barely depends on block width** (height 16, W 4→32): RVV cycles change by +1% (`blend`), +4% (`ipred_h`), +8% (`cfl_pred`), +23% (`ipred_paeth`), while scalar C grows 6.4–7.0× for those three. Speedup is therefore a function of *width*; RVV pays its cost *per row*.
-- **VLEN sensitivity is kernel-specific.** `ipred_v`, `ipred_h`, `blend` give identical cycles at VLEN 4096 and 1024. `ipred_paeth` and `cfl_pred` get cheaper at 1024 by a roughly constant amount per row (≈54 and ≈196 cycles/row). Code inspection points at registers being reused at different element widths (hypothesis, §7).
+- **VLEN sensitivity is kernel specific.** `ipred_v`, `ipred_h`, `blend` give identical cycles at VLEN 4096 and 1024. `ipred_paeth` and `cfl_pred` get cheaper at 1024 by a roughly constant amount per row (≈54 and ≈196 cycles/row). Code inspection points at registers being reused at different element widths (hypothesis, §7).
 
 ## Setup
 
@@ -24,8 +26,8 @@
 | VLEN | **1024** (headline, top of the spec's 128–1024 sweep) and 4096 (Ara default, reference only) |
 | Timing | `rdcycle` around a single call of each implementation, **one run per case** |
 | C baseline | clang `-O3 -fno-vectorize` (scalar by construction) |
-| RVV code | hand-written assembly ported from dav1d's RVV path (e.g. `src/riscv/64/ipred.S`); Zba/Zbb instructions lowered because Ara lacks them (`sh1add`→`slli`+`add`, `ctz`→small loop in `blend`) |
-| Correctness | RVV output compared byte-for-byte with C output for every case |
+| RVV code | hand written assembly ported from dav1d's RVV path (e.g. `src/riscv/64/ipred.S`); Zba/Zbb instructions lowered because Ara lacks them (`sh1add`→`slli`+`add`, `ctz`→small loop in `blend`) |
+| Correctness | RVV output compared byte for byte with C output for every case |
 | Sweeps | `ipred_v` square 4–64 · `ipred_h`, `ipred_paeth` W,H ∈ {4,8,16,32,64} · `cfl_pred` W,H ∈ {4,8,16,32} × alpha ∈ {−12, +7} · `blend` W ∈ {4,8,16,32}, H ∈ {4,8,16,32,64} |
 | Speedup definition | C cycles / RVV cycles (RVV port vs scalar C; the spec's second baseline, existing RVV, is the code measured here) |
 
@@ -33,7 +35,7 @@
 
 ## Results at VLEN = 1024 (square blocks)
 
-![Speedup over scalar C, square blocks](res/fig2_speedup_square)
+![Speedup over scalar C, square blocks](res/fig2_speedup_square.svg)
 
 
 | Kernel | Size | C cycles | RVV cycles | Speedup | RVV cyc/px | C cyc/px | Speedup @ VLEN 4096 |
@@ -137,7 +139,5 @@ python3 docs/scripts/make_figures.py     # regenerates docs/figures/*.svg from d
 ```
 
 `docs/data/results.csv` columns: `vlen, kernel, w, h, variant, c_cycles, rvv_cycles, status, source` (`variant` is the alpha for `cfl_pred`; `source` records where a number came from).
-
-**Data provenance.** VLEN 4096: the square and height-16 tables (cfl C values are alpha means). VLEN 1024: the full logs; the `ipred_v` block in that paste is byte-identical to the 4096 table and is treated as a 1024 measurement; `ipred_h` 4×4 and 4×16 are filled from the 4096 tables.
 
 
