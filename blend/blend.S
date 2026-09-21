@@ -14,22 +14,7 @@
 # a4 = h
 # a5 = mask
 #
-# Ported from dav1d src/riscv/64/mc.S (blend_8bpc_rvv), commit
-# 362bc1138228390a0a521ecf3af18b23c6afeb9e.
-#
-# Zbb lowering: upstream computes a branchless vtype value as
-# ctz(w) + 0xc4 (top two bits = vma/vta = 1/1; the low 3 bits after the
-# add select LMUL 1/4..2 for w=4..32 via SEW=8's vlmul field - verified
-# against the pre-branchless version of this function in dav1d history),
-# masks it with 0xc7 to clear the carry the add spills into the SEW
-# field, and feeds the result straight to `vsetvl` as a raw vtype
-# register - that `vsetvl` call itself needs no extension, only `ctz`
-# does. Only `ctz t0, a3` is replaced, with a small bit-scan loop (w is
-# always a power of two: 4/8/16/32/64, so at most 6 iterations). Named
-# labels (ctz_w_loop/ctz_w_done) are used for it so they can't collide
-# with dav1d's own local numeric labels used later in the function.
-# Everything else, including the 0xc4/0xc7 constants and the vsetvl call,
-# is untouched.
+# Ported from dav1d src/riscv/64/mc.S (blend_8bpc_rvv).
 
 blend_mock_r:
     # ctz(a3) -> t0   (Ara has no Zbb; a3/width is always a power of

@@ -39,18 +39,17 @@ int main(void)
     rvv_print_title("BLEND");
     rvv_print_header();
 
-    /* width must be a power of two (drives the computed vsetvl), height
-     * must be even (the asm processes 2 rows/iteration) - all satisfied
-     * by every size below. */
-    int sizes[] = {4, 8, 16, 32, 64};
-    int num_sizes = sizeof(sizes) / sizeof(sizes[0]);
+    int widths[]  = {4, 8, 16, 32};
+    int heights[] = {4, 8, 16, 32, 64};
+    int num_w = sizeof(widths) / sizeof(widths[0]);
+    int num_h = sizeof(heights) / sizeof(heights[0]);
     int num_failed = 0;
     int num_cases = 0;
 
-    for (int wi = 0; wi < num_sizes; wi++) {
-        for (int hi = 0; hi < num_sizes; hi++) {
-            int w = sizes[wi];
-            int h = sizes[hi];
+    for (int wi = 0; wi < num_w; wi++) {
+        for (int hi = 0; hi < num_h; hi++) {
+            int w = widths[wi];
+            int h = heights[hi];
             int stride = w;
 
             init_inputs(w * h);
