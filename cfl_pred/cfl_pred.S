@@ -15,20 +15,12 @@
 # a5 = ac
 # a6 = alpha
 #
-# Ported from dav1d src/riscv/64/ipred.S (cfl_pred_8bpc_rvv), commit
-# 362bc1138228390a0a521ecf3af18b23c6afeb9e. Only change: the Zba
-# "sh1add a5, t0, a5" (ac += vl * sizeof(int16_t)) is lowered to
-# slli+add using scratch register t1, which is free throughout this
-# function (t0 already holds the just-computed vl and is still needed
-# right after, so t1 rather than t0 is used as the scratch).
-#
-# Ara-support flags to confirm against the dispatcher before assembling:
-# vwmul.vx (widening signed multiply), vssra.vi (rounding shift, uses
-# vxrm - set to round-to-nearest-even via csrw vxrm,zero at entry,
-# matching upstream), vnclipu.wi (x2).
+# Ported from dav1d src/riscv/64/ipred.S (cfl_pred_8bpc_rvv).
+
 
 cfl_pred_mock_r:
     csrw vxrm, zero
+    li t5, 255                          # added: upper clip bound (see change 3)
 1:
     li t2, 0
     mv t3, a2
@@ -48,6 +40,7 @@ cfl_pred_mock_r:
     vneg.v v16, v16, v0.t
     vadd.vx v20, v16, a4
     vmax.vx v0, v20, zero
+    vmin.vx v0, v0, t5                  # added: explicit clip to 255 (see change 3)
     csrwi vxrm, 2                       # rdn (truncate) for the shift-0 narrowing
     vsetvli zero, zero, e16, m2, ta, ma
     vnclipu.wi v4, v0, 0
