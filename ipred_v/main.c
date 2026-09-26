@@ -30,27 +30,30 @@ int main(void)
 
     for (int i = 0; i < num_sizes; i++) {
         int w = sizes[i];
-        int h = sizes[i];
-        int stride = w;
 
-        for (int j = 0; j < w + 1; j++)
-            topleft_buf[j] = (uint8_t)(j + 10);
+        for (int k = 0; k < num_sizes; k++) {
+            int h = sizes[k];
+            int stride = w;
 
-        rvv_zero_u8(dst_c_buf, stride * h);
-        rvv_zero_u8(dst_r_buf, stride * h);
+            for (int j = 0; j < w + 1; j++)
+                topleft_buf[j] = (uint8_t)(j + 10);
 
-        uint64_t start_c = rvv_read_cycles();
-        ipred_v_mock_c(dst_c_buf, stride, topleft_buf, w, h);
-        uint64_t cycles_c = rvv_read_cycles() - start_c;
+            rvv_zero_u8(dst_c_buf, stride * h);
+            rvv_zero_u8(dst_r_buf, stride * h);
 
-        uint64_t start_r = rvv_read_cycles();
-        ipred_v_mock_r(dst_r_buf, stride, topleft_buf, w, h);
-        uint64_t cycles_r = rvv_read_cycles() - start_r;
+            uint64_t start_c = rvv_read_cycles();
+            ipred_v_mock_c(dst_c_buf, stride, topleft_buf, w, h);
+            uint64_t cycles_c = rvv_read_cycles() - start_c;
 
-        int failed = rvv_compare_u8(dst_c_buf, dst_r_buf, stride * h);
-        num_failed += failed;
+            uint64_t start_r = rvv_read_cycles();
+            ipred_v_mock_r(dst_r_buf, stride, topleft_buf, w, h);
+            uint64_t cycles_r = rvv_read_cycles() - start_r;
 
-        rvv_print_row(w, h, cycles_c, cycles_r, failed);
+            int failed = rvv_compare_u8(dst_c_buf, dst_r_buf, stride * h);
+            num_failed += failed;
+
+            rvv_print_row(w, h, cycles_c, cycles_r, failed);
+        }
     }
 
     rvv_print_summary(num_sizes, num_failed);
