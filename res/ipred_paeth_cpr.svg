@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="440" viewBox="0 0 760 440" font-family="Inter,system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<rect x="0.0" y="0.0" width="760.0" height="440.0" rx="0" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="759.0" height="439.0" rx="10" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="28.0" y="34.0" font-size="17" text-anchor="start" fill="#0f172a" font-weight="bold">Cost per row (slope of cycles vs height)</text>
+<text x="28.0" y="54.0" font-size="12" text-anchor="start" fill="#64748b" font-weight="normal">ipred_paeth (8bpc), pattern 0</text>
+<text x="24.0" y="232.0" font-size="12" text-anchor="middle" fill="#64748b" font-weight="normal" transform="rotate(-90 24.0 232.0)">Cycles per row</text>
+<text x="408.0" y="424.0" font-size="12" text-anchor="middle" fill="#64748b" font-weight="normal">Block width</text>
+<line x1="84.0" y1="378.0" x2="732.0" y2="378.0" stroke="#eef1f5" stroke-width="1"/>
+<text x="74.0" y="382.0" font-size="11" text-anchor="end" fill="#64748b" font-weight="normal">0</text>
+<line x1="84.0" y1="305.0" x2="732.0" y2="305.0" stroke="#eef1f5" stroke-width="1"/>
+<text x="74.0" y="309.0" font-size="11" text-anchor="end" fill="#64748b" font-weight="normal">500</text>
+<line x1="84.0" y1="232.0" x2="732.0" y2="232.0" stroke="#eef1f5" stroke-width="1"/>
+<text x="74.0" y="236.0" font-size="11" text-anchor="end" fill="#64748b" font-weight="normal">1,000</text>
+<line x1="84.0" y1="159.0" x2="732.0" y2="159.0" stroke="#eef1f5" stroke-width="1"/>
+<text x="74.0" y="163.0" font-size="11" text-anchor="end" fill="#64748b" font-weight="normal">1,500</text>
+<line x1="84.0" y1="86.0" x2="732.0" y2="86.0" stroke="#eef1f5" stroke-width="1"/>
+<text x="74.0" y="90.0" font-size="11" text-anchor="end" fill="#64748b" font-weight="normal">2,000</text>
+<text x="148.8" y="400.0" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="normal">W=4</text>
+<rect x="102.3" y="360.4" width="45.0" height="17.6" rx="4" fill="#94a3b8"/>
+<text x="124.8" y="353.4" font-size="11" text-anchor="middle" fill="#64748b" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">121</text>
+<rect x="150.3" y="344.3" width="45.0" height="33.7" rx="4" fill="#2563eb"/>
+<text x="172.8" y="337.3" font-size="11" text-anchor="middle" fill="#1d4ed8" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">231</text>
+<text x="278.4" y="400.0" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="normal">W=8</text>
+<rect x="231.9" y="345.5" width="45.0" height="32.5" rx="4" fill="#94a3b8"/>
+<text x="254.4" y="338.5" font-size="11" text-anchor="middle" fill="#64748b" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">223</text>
+<rect x="279.9" y="343.7" width="45.0" height="34.3" rx="4" fill="#2563eb"/>
+<text x="302.4" y="336.7" font-size="11" text-anchor="middle" fill="#1d4ed8" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">235</text>
+<text x="408.0" y="400.0" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="normal">W=16</text>
+<rect x="361.5" y="316.3" width="45.0" height="61.7" rx="4" fill="#94a3b8"/>
+<text x="384.0" y="309.3" font-size="11" text-anchor="middle" fill="#64748b" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">422</text>
+<rect x="409.5" y="341.2" width="45.0" height="36.8" rx="4" fill="#2563eb"/>
+<text x="432.0" y="334.2" font-size="11" text-anchor="middle" fill="#1d4ed8" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">252</text>
+<text x="537.6" y="400.0" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="normal">W=32</text>
+<rect x="491.1" y="259.6" width="45.0" height="118.4" rx="4" fill="#94a3b8"/>
+<text x="513.6" y="252.6" font-size="11" text-anchor="middle" fill="#64748b" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">811</text>
+<rect x="539.1" y="336.3" width="45.0" height="41.7" rx="4" fill="#2563eb"/>
+<text x="561.6" y="329.3" font-size="11" text-anchor="middle" fill="#1d4ed8" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">285</text>
+<text x="667.2" y="400.0" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="normal">W=64</text>
+<rect x="620.7" y="143.2" width="45.0" height="234.8" rx="4" fill="#94a3b8"/>
+<text x="643.2" y="136.2" font-size="11" text-anchor="middle" fill="#64748b" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">1,608</text>
+<rect x="668.7" y="323.7" width="45.0" height="54.3" rx="4" fill="#2563eb"/>
+<text x="691.2" y="316.7" font-size="11" text-anchor="middle" fill="#1d4ed8" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">372</text>
+<line x1="84.0" y1="378.0" x2="732.0" y2="378.0" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="624.0" y="24.0" width="12.0" height="12.0" rx="3" fill="#94a3b8"/>
+<text x="642.0" y="34.0" font-size="12" text-anchor="start" fill="#64748b" font-weight="normal">C</text>
+<rect x="671.0" y="24.0" width="12.0" height="12.0" rx="3" fill="#2563eb"/>
+<text x="689.0" y="34.0" font-size="12" text-anchor="start" fill="#64748b" font-weight="normal">RVV</text>
+</svg>
