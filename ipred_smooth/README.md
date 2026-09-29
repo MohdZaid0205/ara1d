@@ -2,7 +2,7 @@
 
 > Status: **extracted; 38/38 cases bit-exact in the pasted simulation run** (VLEN, lanes and memory model not stated, see Run configuration).
 
-[ipred_smooth results](../res/ipred_smooth_results.svg)
+![ipred_smooth results](../res/ipred_smooth_results.svg)
 
 ## Files and build
 
