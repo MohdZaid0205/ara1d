@@ -1,74 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="620" height="468" viewBox="0 0 620 468" font-family="Inter,system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
-<rect x="0.0" y="0.0" width="620.0" height="468.0" rx="0" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="619.0" height="467.0" rx="10" fill="none" stroke="#e2e8f0" stroke-width="1"/>
-<text x="28.0" y="34.0" font-size="17" text-anchor="start" fill="#0f172a" font-weight="bold">Speedup (C / RVV) over W×H</text>
-<text x="28.0" y="54.0" font-size="12" text-anchor="start" fill="#64748b" font-weight="normal">ipred_paeth (8bpc), pattern 0</text>
-<text x="324.0" y="90.0" font-size="12" text-anchor="middle" fill="#64748b" font-weight="normal">Width</text>
-<text x="56.0" y="243.0" font-size="12" text-anchor="middle" fill="#64748b" font-weight="normal" transform="rotate(-90 56.0 243.0)">Height</text>
-<text x="156.0" y="106.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="600">4</text>
-<text x="240.0" y="106.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="600">8</text>
-<text x="324.0" y="106.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="600">16</text>
-<text x="408.0" y="106.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="600">32</text>
-<text x="492.0" y="106.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="600">64</text>
-<text x="100.0" y="148.0" font-size="13" text-anchor="end" fill="#0f172a" font-weight="600">4</text>
-<rect x="116.0" y="120.0" width="80.0" height="46.0" rx="6" fill="#f37676"/>
-<text x="156.0" y="148.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="bold">0.60×</text>
-<rect x="200.0" y="120.0" width="80.0" height="46.0" rx="6" fill="#fffafa"/>
-<text x="240.0" y="148.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="bold">0.98×</text>
-<rect x="284.0" y="120.0" width="80.0" height="46.0" rx="6" fill="#adc5f8"/>
-<text x="324.0" y="148.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="500">1.68×</text>
-<rect x="368.0" y="120.0" width="80.0" height="46.0" rx="6" fill="#5d8bf0"/>
-<text x="408.0" y="148.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="500">2.80×</text>
-<rect x="452.0" y="120.0" width="80.0" height="46.0" rx="6" fill="#2563eb"/>
-<text x="492.0" y="148.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="500">4.39×</text>
-<text x="100.0" y="198.0" font-size="13" text-anchor="end" fill="#0f172a" font-weight="600">8</text>
-<rect x="116.0" y="170.0" width="80.0" height="46.0" rx="6" fill="#f16161"/>
-<text x="156.0" y="198.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="bold">0.56×</text>
-<rect x="200.0" y="170.0" width="80.0" height="46.0" rx="6" fill="#fef3f3"/>
-<text x="240.0" y="198.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="bold">0.96×</text>
-<rect x="284.0" y="170.0" width="80.0" height="46.0" rx="6" fill="#afc6f8"/>
-<text x="324.0" y="198.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="500">1.66×</text>
-<rect x="368.0" y="170.0" width="80.0" height="46.0" rx="6" fill="#5e8cf0"/>
-<text x="408.0" y="198.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="500">2.79×</text>
-<rect x="452.0" y="170.0" width="80.0" height="46.0" rx="6" fill="#2563eb"/>
-<text x="492.0" y="198.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="500">4.31×</text>
-<text x="100.0" y="248.0" font-size="13" text-anchor="end" fill="#0f172a" font-weight="600">16</text>
-<rect x="116.0" y="220.0" width="80.0" height="46.0" rx="6" fill="#f15757"/>
-<text x="156.0" y="248.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="bold">0.54×</text>
-<rect x="200.0" y="220.0" width="80.0" height="46.0" rx="6" fill="#fef5f5"/>
-<text x="240.0" y="248.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="bold">0.97×</text>
-<rect x="284.0" y="220.0" width="80.0" height="46.0" rx="6" fill="#b1c7f8"/>
-<text x="324.0" y="248.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="500">1.64×</text>
-<rect x="368.0" y="220.0" width="80.0" height="46.0" rx="6" fill="#5d8bf0"/>
-<text x="408.0" y="248.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="500">2.80×</text>
-<rect x="452.0" y="220.0" width="80.0" height="46.0" rx="6" fill="#2563eb"/>
-<text x="492.0" y="248.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="500">4.29×</text>
-<text x="100.0" y="298.0" font-size="13" text-anchor="end" fill="#0f172a" font-weight="600">32</text>
-<rect x="116.0" y="270.0" width="80.0" height="46.0" rx="6" fill="#f05151"/>
-<text x="156.0" y="298.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="bold">0.53×</text>
-<rect x="200.0" y="270.0" width="80.0" height="46.0" rx="6" fill="#fef7f7"/>
-<text x="240.0" y="298.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="bold">0.97×</text>
-<rect x="284.0" y="270.0" width="80.0" height="46.0" rx="6" fill="#a8c1f7"/>
-<text x="324.0" y="298.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="500">1.73×</text>
-<rect x="368.0" y="270.0" width="80.0" height="46.0" rx="6" fill="#5887f0"/>
-<text x="408.0" y="298.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="500">2.89×</text>
-<rect x="452.0" y="270.0" width="80.0" height="46.0" rx="6" fill="#2563eb"/>
-<text x="492.0" y="298.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="500">4.41×</text>
-<text x="100.0" y="348.0" font-size="13" text-anchor="end" fill="#0f172a" font-weight="600">64</text>
-<rect x="116.0" y="320.0" width="80.0" height="46.0" rx="6" fill="#f05353"/>
-<text x="156.0" y="348.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="bold">0.53×</text>
-<rect x="200.0" y="320.0" width="80.0" height="46.0" rx="6" fill="#fef1f1"/>
-<text x="240.0" y="348.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="bold">0.95×</text>
-<rect x="284.0" y="320.0" width="80.0" height="46.0" rx="6" fill="#afc5f8"/>
-<text x="324.0" y="348.0" font-size="13" text-anchor="middle" fill="#0f172a" font-weight="500">1.67×</text>
-<rect x="368.0" y="320.0" width="80.0" height="46.0" rx="6" fill="#5b8af0"/>
-<text x="408.0" y="348.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="500">2.83×</text>
-<rect x="452.0" y="320.0" width="80.0" height="46.0" rx="6" fill="#2563eb"/>
-<text x="492.0" y="348.0" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="500">4.32×</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="512" viewBox="0 0 1024 512">
+<style>:root{--ink:#0f172a;--muted:#64748b;--grid:#e2e8f0;--axis:#94a3b8;--c:#94a3b8;--c-ink:#64748b;--r:#2563eb;--r-ink:#1d4ed8;--bad:#ef4444;}@media (prefers-color-scheme: dark){:root{--ink:#e6edf3;--muted:#9198a1;--grid:#3d444d;--axis:#6e7681;--c:#8b949e;--c-ink:#adb5bd;--r:#58a6ff;--r-ink:#79c0ff;--bad:#f85149;}}text{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style>
+<text x="28.0" y="34.0" font-size="17" text-anchor="start" font-weight="bold" style="fill:var(--ink)">Speedup (C / RVV) over W×H</text>
+<text x="28.0" y="54.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">ipred_paeth (8bpc), pattern 0</text>
+<text x="526.0" y="90.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--muted)">Width</text>
+<text x="56.0" y="265.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--muted)" transform="rotate(-90 56.0 265.0)">Height</text>
+<text x="196.4" y="106.0" font-size="13" text-anchor="middle" font-weight="600" style="fill:var(--ink)">4</text>
+<text x="361.2" y="106.0" font-size="13" text-anchor="middle" font-weight="600" style="fill:var(--ink)">8</text>
+<text x="526.0" y="106.0" font-size="13" text-anchor="middle" font-weight="600" style="fill:var(--ink)">16</text>
+<text x="690.8" y="106.0" font-size="13" text-anchor="middle" font-weight="600" style="fill:var(--ink)">32</text>
+<text x="855.6" y="106.0" font-size="13" text-anchor="middle" font-weight="600" style="fill:var(--ink)">64</text>
+<text x="100.0" y="152.4" font-size="13" text-anchor="end" font-weight="600" style="fill:var(--ink)">4</text>
+<rect x="116.0" y="120.0" width="160.8" height="54.8" rx="6" style="fill:#f37676"/>
+<text x="196.4" y="152.4" font-size="13" text-anchor="middle" font-weight="bold" style="fill:#ffffff">0.60×</text>
+<rect x="280.8" y="120.0" width="160.8" height="54.8" rx="6" style="fill:#fffafa"/>
+<text x="361.2" y="152.4" font-size="13" text-anchor="middle" font-weight="bold" style="fill:#0f172a">0.98×</text>
+<rect x="445.6" y="120.0" width="160.8" height="54.8" rx="6" style="fill:#adc5f8"/>
+<text x="526.0" y="152.4" font-size="13" text-anchor="middle" font-weight="500" style="fill:#0f172a">1.68×</text>
+<rect x="610.4" y="120.0" width="160.8" height="54.8" rx="6" style="fill:#5d8bf0"/>
+<text x="690.8" y="152.4" font-size="13" text-anchor="middle" font-weight="500" style="fill:#ffffff">2.80×</text>
+<rect x="775.2" y="120.0" width="160.8" height="54.8" rx="6" style="fill:#2563eb"/>
+<text x="855.6" y="152.4" font-size="13" text-anchor="middle" font-weight="500" style="fill:#ffffff">4.39×</text>
+<text x="100.0" y="211.2" font-size="13" text-anchor="end" font-weight="600" style="fill:var(--ink)">8</text>
+<rect x="116.0" y="178.8" width="160.8" height="54.8" rx="6" style="fill:#f16161"/>
+<text x="196.4" y="211.2" font-size="13" text-anchor="middle" font-weight="bold" style="fill:#ffffff">0.56×</text>
+<rect x="280.8" y="178.8" width="160.8" height="54.8" rx="6" style="fill:#fef3f3"/>
+<text x="361.2" y="211.2" font-size="13" text-anchor="middle" font-weight="bold" style="fill:#0f172a">0.96×</text>
+<rect x="445.6" y="178.8" width="160.8" height="54.8" rx="6" style="fill:#afc6f8"/>
+<text x="526.0" y="211.2" font-size="13" text-anchor="middle" font-weight="500" style="fill:#0f172a">1.66×</text>
+<rect x="610.4" y="178.8" width="160.8" height="54.8" rx="6" style="fill:#5e8cf0"/>
+<text x="690.8" y="211.2" font-size="13" text-anchor="middle" font-weight="500" style="fill:#ffffff">2.79×</text>
+<rect x="775.2" y="178.8" width="160.8" height="54.8" rx="6" style="fill:#2563eb"/>
+<text x="855.6" y="211.2" font-size="13" text-anchor="middle" font-weight="500" style="fill:#ffffff">4.31×</text>
+<text x="100.0" y="270.0" font-size="13" text-anchor="end" font-weight="600" style="fill:var(--ink)">16</text>
+<rect x="116.0" y="237.6" width="160.8" height="54.8" rx="6" style="fill:#f15757"/>
+<text x="196.4" y="270.0" font-size="13" text-anchor="middle" font-weight="bold" style="fill:#ffffff">0.54×</text>
+<rect x="280.8" y="237.6" width="160.8" height="54.8" rx="6" style="fill:#fef5f5"/>
+<text x="361.2" y="270.0" font-size="13" text-anchor="middle" font-weight="bold" style="fill:#0f172a">0.97×</text>
+<rect x="445.6" y="237.6" width="160.8" height="54.8" rx="6" style="fill:#b1c7f8"/>
+<text x="526.0" y="270.0" font-size="13" text-anchor="middle" font-weight="500" style="fill:#0f172a">1.64×</text>
+<rect x="610.4" y="237.6" width="160.8" height="54.8" rx="6" style="fill:#5d8bf0"/>
+<text x="690.8" y="270.0" font-size="13" text-anchor="middle" font-weight="500" style="fill:#ffffff">2.80×</text>
+<rect x="775.2" y="237.6" width="160.8" height="54.8" rx="6" style="fill:#2563eb"/>
+<text x="855.6" y="270.0" font-size="13" text-anchor="middle" font-weight="500" style="fill:#ffffff">4.29×</text>
+<text x="100.0" y="328.8" font-size="13" text-anchor="end" font-weight="600" style="fill:var(--ink)">32</text>
+<rect x="116.0" y="296.4" width="160.8" height="54.8" rx="6" style="fill:#f05151"/>
+<text x="196.4" y="328.8" font-size="13" text-anchor="middle" font-weight="bold" style="fill:#ffffff">0.53×</text>
+<rect x="280.8" y="296.4" width="160.8" height="54.8" rx="6" style="fill:#fef7f7"/>
+<text x="361.2" y="328.8" font-size="13" text-anchor="middle" font-weight="bold" style="fill:#0f172a">0.97×</text>
+<rect x="445.6" y="296.4" width="160.8" height="54.8" rx="6" style="fill:#a8c1f7"/>
+<text x="526.0" y="328.8" font-size="13" text-anchor="middle" font-weight="500" style="fill:#0f172a">1.73×</text>
+<rect x="610.4" y="296.4" width="160.8" height="54.8" rx="6" style="fill:#5887f0"/>
+<text x="690.8" y="328.8" font-size="13" text-anchor="middle" font-weight="500" style="fill:#ffffff">2.89×</text>
+<rect x="775.2" y="296.4" width="160.8" height="54.8" rx="6" style="fill:#2563eb"/>
+<text x="855.6" y="328.8" font-size="13" text-anchor="middle" font-weight="500" style="fill:#ffffff">4.41×</text>
+<text x="100.0" y="387.6" font-size="13" text-anchor="end" font-weight="600" style="fill:var(--ink)">64</text>
+<rect x="116.0" y="355.2" width="160.8" height="54.8" rx="6" style="fill:#f05353"/>
+<text x="196.4" y="387.6" font-size="13" text-anchor="middle" font-weight="bold" style="fill:#ffffff">0.53×</text>
+<rect x="280.8" y="355.2" width="160.8" height="54.8" rx="6" style="fill:#fef1f1"/>
+<text x="361.2" y="387.6" font-size="13" text-anchor="middle" font-weight="bold" style="fill:#0f172a">0.95×</text>
+<rect x="445.6" y="355.2" width="160.8" height="54.8" rx="6" style="fill:#afc5f8"/>
+<text x="526.0" y="387.6" font-size="13" text-anchor="middle" font-weight="500" style="fill:#0f172a">1.67×</text>
+<rect x="610.4" y="355.2" width="160.8" height="54.8" rx="6" style="fill:#5b8af0"/>
+<text x="690.8" y="387.6" font-size="13" text-anchor="middle" font-weight="500" style="fill:#ffffff">2.83×</text>
+<rect x="775.2" y="355.2" width="160.8" height="54.8" rx="6" style="fill:#2563eb"/>
+<text x="855.6" y="387.6" font-size="13" text-anchor="middle" font-weight="500" style="fill:#ffffff">4.32×</text>
 <defs><linearGradient id="hg" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="rgb(239, 68, 68)"/><stop offset="0.3333" stop-color="rgb(255, 255, 255)"/><stop offset="1" stop-color="rgb(37, 99, 235)"/></linearGradient></defs>
-<rect x="114.0" y="394" width="420" height="12" rx="6" fill="url(#hg)" stroke="#cbd5e1"/>
-<text x="114.0" y="426.0" font-size="11" text-anchor="start" fill="#64748b" font-weight="normal">≤ 0.5×  C faster</text>
-<text x="254.0" y="426.0" font-size="11" text-anchor="middle" fill="#64748b" font-weight="normal">1×</text>
-<text x="534.0" y="426.0" font-size="11" text-anchor="end" fill="#64748b" font-weight="normal">RVV faster  ≥ 4×</text>
+<rect x="114.0" y="438.0" width="824.0" height="12" rx="6" style="fill:url(#hg);stroke:var(--axis)"/>
+<text x="114.0" y="470.0" font-size="11" text-anchor="start" font-weight="normal" style="fill:var(--muted)">≤ 0.5×  C faster</text>
+<text x="388.7" y="470.0" font-size="11" text-anchor="middle" font-weight="normal" style="fill:var(--muted)">1×</text>
+<text x="938.0" y="470.0" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">RVV faster  ≥ 4×</text>
 </svg>

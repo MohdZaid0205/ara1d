@@ -1,49 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="440" viewBox="0 0 760 440" font-family="Inter,system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
-<rect x="0.0" y="0.0" width="760.0" height="440.0" rx="0" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="759.0" height="439.0" rx="10" fill="none" stroke="#e2e8f0" stroke-width="1"/>
-<text x="28.0" y="34.0" font-size="17" text-anchor="start" fill="#0f172a" font-weight="bold">Cycles per pixel, square blocks</text>
-<text x="28.0" y="54.0" font-size="12" text-anchor="start" fill="#64748b" font-weight="normal">ipred_smooth (8bpc), pattern 1</text>
-<text x="24.0" y="232.0" font-size="12" text-anchor="middle" fill="#64748b" font-weight="normal" transform="rotate(-90 24.0 232.0)">Cycles per pixel</text>
-<text x="408.0" y="424.0" font-size="12" text-anchor="middle" fill="#64748b" font-weight="normal">Block size (W×H)</text>
-<line x1="84.0" y1="378.0" x2="732.0" y2="378.0" stroke="#eef1f5" stroke-width="1"/>
-<text x="74.0" y="382.0" font-size="11" text-anchor="end" fill="#64748b" font-weight="normal">0</text>
-<line x1="84.0" y1="280.7" x2="732.0" y2="280.7" stroke="#eef1f5" stroke-width="1"/>
-<text x="74.0" y="284.7" font-size="11" text-anchor="end" fill="#64748b" font-weight="normal">20</text>
-<line x1="84.0" y1="183.3" x2="732.0" y2="183.3" stroke="#eef1f5" stroke-width="1"/>
-<text x="74.0" y="187.3" font-size="11" text-anchor="end" fill="#64748b" font-weight="normal">40</text>
-<line x1="84.0" y1="86.0" x2="732.0" y2="86.0" stroke="#eef1f5" stroke-width="1"/>
-<text x="74.0" y="90.0" font-size="11" text-anchor="end" fill="#64748b" font-weight="normal">60</text>
-<line x1="84.0" y1="378.0" x2="732.0" y2="378.0" stroke="#cbd5e1" stroke-width="1.5"/>
-<text x="148.8" y="400.0" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="normal">4×4</text>
-<text x="278.4" y="400.0" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="normal">8×8</text>
-<text x="408.0" y="400.0" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="normal">16×16</text>
-<text x="537.6" y="400.0" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="normal">32×32</text>
-<text x="667.2" y="400.0" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="normal">64×64</text>
-<polyline points="148.8,250.6 278.4,272.8 408.0,282.2 537.6,286.5 667.2,288.4" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="148.8,136.5 278.4,257.1 408.0,315.1 537.6,343.2 667.2,356.8" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="148.8" cy="250.6" r="5" fill="#94a3b8" stroke="#ffffff" stroke-width="2"/>
-<circle cx="278.4" cy="272.8" r="5" fill="#94a3b8" stroke="#ffffff" stroke-width="2"/>
-<circle cx="408.0" cy="282.2" r="5" fill="#94a3b8" stroke="#ffffff" stroke-width="2"/>
-<circle cx="537.6" cy="286.5" r="5" fill="#94a3b8" stroke="#ffffff" stroke-width="2"/>
-<circle cx="667.2" cy="288.4" r="5" fill="#94a3b8" stroke="#ffffff" stroke-width="2"/>
-<circle cx="148.8" cy="136.5" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
-<circle cx="278.4" cy="257.1" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
-<circle cx="408.0" cy="315.1" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
-<circle cx="537.6" cy="343.2" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
-<circle cx="667.2" cy="356.8" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
-<text x="148.8" y="272.6" font-size="11" text-anchor="middle" fill="#64748b" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">26.19</text>
-<text x="148.8" y="123.5" font-size="11" text-anchor="middle" fill="#2563eb" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">49.62</text>
-<text x="278.4" y="294.8" font-size="11" text-anchor="middle" fill="#64748b" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">21.61</text>
-<text x="278.4" y="244.1" font-size="11" text-anchor="middle" fill="#2563eb" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">24.84</text>
-<text x="408.0" y="269.2" font-size="11" text-anchor="middle" fill="#64748b" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">19.68</text>
-<text x="408.0" y="337.1" font-size="11" text-anchor="middle" fill="#2563eb" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">12.93</text>
-<text x="537.6" y="273.5" font-size="11" text-anchor="middle" fill="#64748b" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">18.81</text>
-<text x="537.6" y="365.2" font-size="11" text-anchor="middle" fill="#2563eb" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">7.15</text>
-<text x="667.2" y="275.4" font-size="11" text-anchor="middle" fill="#64748b" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">18.41</text>
-<text x="667.2" y="343.8" font-size="11" text-anchor="middle" fill="#2563eb" font-weight="600" stroke="#ffffff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">4.35</text>
-<rect x="624.0" y="24.0" width="12.0" height="12.0" rx="3" fill="#94a3b8"/>
-<text x="642.0" y="34.0" font-size="12" text-anchor="start" fill="#64748b" font-weight="normal">C</text>
-<rect x="671.0" y="24.0" width="12.0" height="12.0" rx="3" fill="#2563eb"/>
-<text x="689.0" y="34.0" font-size="12" text-anchor="start" fill="#64748b" font-weight="normal">RVV</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="512" viewBox="0 0 1024 512">
+<style>:root{--ink:#0f172a;--muted:#64748b;--grid:#e2e8f0;--axis:#94a3b8;--c:#94a3b8;--c-ink:#64748b;--r:#2563eb;--r-ink:#1d4ed8;--bad:#ef4444;}@media (prefers-color-scheme: dark){:root{--ink:#e6edf3;--muted:#9198a1;--grid:#3d444d;--axis:#6e7681;--c:#8b949e;--c-ink:#adb5bd;--r:#58a6ff;--r-ink:#79c0ff;--bad:#f85149;}}text{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style>
+<text x="28.0" y="34.0" font-size="17" text-anchor="start" font-weight="bold" style="fill:var(--ink)">Cycles per pixel, square blocks</text>
+<text x="28.0" y="54.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">ipred_smooth (8bpc), pattern 1</text>
+<text x="24.0" y="268.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--muted)" transform="rotate(-90 24.0 268.0)">Cycles per pixel</text>
+<text x="540.0" y="496.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--muted)">Block size (W×H)</text>
+<line x1="84.0" y1="450.0" x2="996.0" y2="450.0" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="454.0" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">0</text>
+<line x1="84.0" y1="328.7" x2="996.0" y2="328.7" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="332.7" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">20</text>
+<line x1="84.0" y1="207.3" x2="996.0" y2="207.3" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="211.3" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">40</text>
+<line x1="84.0" y1="86.0" x2="996.0" y2="86.0" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="90.0" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">60</text>
+<line x1="84.0" y1="450.0" x2="996.0" y2="450.0" style="stroke:var(--axis);stroke-width:1.5"/>
+<text x="175.2" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">4×4</text>
+<text x="357.6" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">8×8</text>
+<text x="540.0" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">16×16</text>
+<text x="722.4" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">32×32</text>
+<text x="904.8" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">64×64</text>
+<polyline points="175.2,291.1 357.6,318.9 540.0,330.6 722.4,335.9 904.8,338.3" style="fill:none;stroke:var(--c);stroke-width:2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="175.2,148.9 357.6,299.3 540.0,371.6 722.4,406.6 904.8,423.6" style="fill:none;stroke:var(--r);stroke-width:2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="175.2" cy="291.1" r="5" style="fill:var(--c)"/>
+<circle cx="357.6" cy="318.9" r="5" style="fill:var(--c)"/>
+<circle cx="540.0" cy="330.6" r="5" style="fill:var(--c)"/>
+<circle cx="722.4" cy="335.9" r="5" style="fill:var(--c)"/>
+<circle cx="904.8" cy="338.3" r="5" style="fill:var(--c)"/>
+<circle cx="175.2" cy="148.9" r="5" style="fill:var(--r)"/>
+<circle cx="357.6" cy="299.3" r="5" style="fill:var(--r)"/>
+<circle cx="540.0" cy="371.6" r="5" style="fill:var(--r)"/>
+<circle cx="722.4" cy="406.6" r="5" style="fill:var(--r)"/>
+<circle cx="904.8" cy="423.6" r="5" style="fill:var(--r)"/>
+<text x="175.2" y="313.1" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">26.19</text>
+<text x="175.2" y="135.9" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">49.62</text>
+<text x="357.6" y="340.9" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">21.61</text>
+<text x="357.6" y="286.3" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">24.84</text>
+<text x="540.0" y="317.6" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">19.68</text>
+<text x="540.0" y="393.6" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">12.93</text>
+<text x="722.4" y="322.9" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">18.81</text>
+<text x="722.4" y="428.6" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">7.15</text>
+<text x="904.8" y="325.3" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">18.41</text>
+<text x="904.8" y="410.6" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">4.35</text>
+<rect x="888.0" y="24.0" width="12.0" height="12.0" rx="3" style="fill:var(--c)"/>
+<text x="906.0" y="34.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">C</text>
+<rect x="935.0" y="24.0" width="12.0" height="12.0" rx="3" style="fill:var(--r)"/>
+<text x="953.0" y="34.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">RVV</text>
 </svg>
