@@ -138,9 +138,3 @@ Fit of `cycles = fixed + per_row × H` at each width that has at least three hei
 
 > TODO
 
-### Caveats
-
-- One run per case, no repeats, so no run-to-run spread is available.
-- Memory model not stated.
-- `ipred_smooth_h.S` was not attached, so there is no catalogue entry, no hypotheses, and Ara lowerings or workarounds in the `.S` are not stated.
-- The figures and the fit use pattern 1 (all 255).
