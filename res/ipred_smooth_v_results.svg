@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="512" viewBox="0 0 1024 512">
+<style>:root{--ink:#0f172a;--muted:#64748b;--grid:#e2e8f0;--axis:#94a3b8;--c:#94a3b8;--c-ink:#64748b;--r:#2563eb;--r-ink:#1d4ed8;--bad:#ef4444;}@media (prefers-color-scheme: dark){:root{--ink:#e6edf3;--muted:#9198a1;--grid:#3d444d;--axis:#6e7681;--c:#8b949e;--c-ink:#adb5bd;--r:#58a6ff;--r-ink:#79c0ff;--bad:#f85149;}}text{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style>
+<text x="28.0" y="34.0" font-size="17" text-anchor="start" font-weight="bold" style="fill:var(--ink)">Speedup (C / RVV), square blocks</text>
+<text x="28.0" y="54.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">ipred_smooth_v (8bpc), pattern 1</text>
+<text x="24.0" y="268.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--muted)" transform="rotate(-90 24.0 268.0)">Speedup (C cycles ÷ RVV cycles)</text>
+<text x="512.0" y="496.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--muted)">Block size (W×H)</text>
+<line x1="84.0" y1="450.0" x2="940.0" y2="450.0" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="454.0" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">0</text>
+<line x1="84.0" y1="377.2" x2="940.0" y2="377.2" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="381.2" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">1</text>
+<line x1="84.0" y1="304.4" x2="940.0" y2="304.4" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="308.4" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">2</text>
+<line x1="84.0" y1="231.6" x2="940.0" y2="231.6" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="235.6" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">3</text>
+<line x1="84.0" y1="158.8" x2="940.0" y2="158.8" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="162.8" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">4</text>
+<line x1="84.0" y1="86.0" x2="940.0" y2="86.0" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="90.0" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">5</text>
+<line x1="84.0" y1="377.2" x2="940.0" y2="377.2" style="stroke:var(--ink);stroke-width:1.2" stroke-dasharray="5,4"/>
+<text x="948.0" y="381.2" font-size="11" text-anchor="start" font-weight="normal" style="fill:var(--ink)">break-even</text>
+<text x="169.6" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">4×4</text>
+<rect x="135.1" y="401.1" width="69.0" height="48.9" rx="4" style="fill:var(--bad)"/>
+<text x="169.6" y="394.1" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--bad)">0.67×</text>
+<text x="340.8" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">8×8</text>
+<rect x="306.3" y="373.1" width="69.0" height="76.9" rx="4" style="fill:var(--r)"/>
+<text x="340.8" y="366.1" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">1.06×</text>
+<text x="512.0" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">16×16</text>
+<rect x="477.5" y="325.1" width="69.0" height="124.9" rx="4" style="fill:var(--r)"/>
+<text x="512.0" y="318.1" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">1.72×</text>
+<text x="683.2" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">32×32</text>
+<rect x="648.7" y="251.4" width="69.0" height="198.6" rx="4" style="fill:var(--r)"/>
+<text x="683.2" y="244.4" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">2.73×</text>
+<text x="854.4" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">64×64</text>
+<rect x="819.9" y="157.6" width="69.0" height="292.4" rx="4" style="fill:var(--r)"/>
+<text x="854.4" y="150.6" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">4.02×</text>
+<line x1="84.0" y1="450.0" x2="940.0" y2="450.0" style="stroke:var(--axis);stroke-width:1.5"/>
+<rect x="790.0" y="24.0" width="12.0" height="12.0" rx="3" style="fill:var(--r)"/>
+<text x="808.0" y="34.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">RVV faster</text>
+<rect x="900.0" y="24.0" width="12.0" height="12.0" rx="3" style="fill:var(--bad)"/>
+<text x="918.0" y="34.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">C faster</text>
+</svg>
