@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="512" viewBox="0 0 1024 512">
+<style>:root{--ink:#0f172a;--muted:#64748b;--grid:#e2e8f0;--axis:#94a3b8;--c:#94a3b8;--c-ink:#64748b;--r:#2563eb;--r-ink:#1d4ed8;--bad:#ef4444;}@media (prefers-color-scheme: dark){:root{--ink:#e6edf3;--muted:#9198a1;--grid:#3d444d;--axis:#6e7681;--c:#8b949e;--c-ink:#adb5bd;--r:#58a6ff;--r-ink:#79c0ff;--bad:#f85149;}}text{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style>
+<text x="28.0" y="34.0" font-size="17" text-anchor="start" font-weight="bold" style="fill:var(--ink)">Cycles per pixel, square blocks</text>
+<text x="28.0" y="54.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">ipred_smooth_h (8bpc), pattern 1</text>
+<text x="24.0" y="268.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--muted)" transform="rotate(-90 24.0 268.0)">Cycles per pixel</text>
+<text x="540.0" y="496.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--muted)">Block size (W×H)</text>
+<line x1="84.0" y1="450.0" x2="996.0" y2="450.0" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="454.0" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">0</text>
+<line x1="84.0" y1="377.2" x2="996.0" y2="377.2" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="381.2" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">5</text>
+<line x1="84.0" y1="304.4" x2="996.0" y2="304.4" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="308.4" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">10</text>
+<line x1="84.0" y1="231.6" x2="996.0" y2="231.6" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="235.6" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">15</text>
+<line x1="84.0" y1="158.8" x2="996.0" y2="158.8" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="162.8" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">20</text>
+<line x1="84.0" y1="86.0" x2="996.0" y2="86.0" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="90.0" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">25</text>
+<line x1="84.0" y1="450.0" x2="996.0" y2="450.0" style="stroke:var(--axis);stroke-width:1.5"/>
+<text x="175.2" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">4×4</text>
+<text x="357.6" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">8×8</text>
+<text x="540.0" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">16×16</text>
+<text x="722.4" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">32×32</text>
+<text x="904.8" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">64×64</text>
+<polyline points="175.2,148.8 357.6,193.6 540.0,213.5 722.4,222.4 904.8,227.0" style="fill:none;stroke:var(--c);stroke-width:2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="175.2,193.4 357.6,321.0 540.0,379.1 722.4,405.7 904.8,419.5" style="fill:none;stroke:var(--r);stroke-width:2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="175.2" cy="148.8" r="5" style="fill:var(--c)"/>
+<circle cx="357.6" cy="193.6" r="5" style="fill:var(--c)"/>
+<circle cx="540.0" cy="213.5" r="5" style="fill:var(--c)"/>
+<circle cx="722.4" cy="222.4" r="5" style="fill:var(--c)"/>
+<circle cx="904.8" cy="227.0" r="5" style="fill:var(--c)"/>
+<circle cx="175.2" cy="193.4" r="5" style="fill:var(--r)"/>
+<circle cx="357.6" cy="321.0" r="5" style="fill:var(--r)"/>
+<circle cx="540.0" cy="379.1" r="5" style="fill:var(--r)"/>
+<circle cx="722.4" cy="405.7" r="5" style="fill:var(--r)"/>
+<circle cx="904.8" cy="419.5" r="5" style="fill:var(--r)"/>
+<text x="175.2" y="135.8" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">20.69</text>
+<text x="175.2" y="215.4" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">17.62</text>
+<text x="357.6" y="180.6" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">17.61</text>
+<text x="357.6" y="343.0" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">8.86</text>
+<text x="540.0" y="200.5" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">16.25</text>
+<text x="540.0" y="401.1" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">4.87</text>
+<text x="722.4" y="209.4" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">15.63</text>
+<text x="722.4" y="427.7" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">3.04</text>
+<text x="904.8" y="214.0" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">15.31</text>
+<text x="904.8" y="441.5" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">2.09</text>
+<rect x="888.0" y="24.0" width="12.0" height="12.0" rx="3" style="fill:var(--c)"/>
+<text x="906.0" y="34.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">C</text>
+<rect x="935.0" y="24.0" width="12.0" height="12.0" rx="3" style="fill:var(--r)"/>
+<text x="953.0" y="34.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">RVV</text>
+</svg>

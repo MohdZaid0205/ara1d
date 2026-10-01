@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="512" viewBox="0 0 1024 512">
+<style>:root{--ink:#0f172a;--muted:#64748b;--grid:#e2e8f0;--axis:#94a3b8;--c:#94a3b8;--c-ink:#64748b;--r:#2563eb;--r-ink:#1d4ed8;--bad:#ef4444;}@media (prefers-color-scheme: dark){:root{--ink:#e6edf3;--muted:#9198a1;--grid:#3d444d;--axis:#6e7681;--c:#8b949e;--c-ink:#adb5bd;--r:#58a6ff;--r-ink:#79c0ff;--bad:#f85149;}}text{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style>
+<text x="28.0" y="34.0" font-size="17" text-anchor="start" font-weight="bold" style="fill:var(--ink)">Cost per row (slope of cycles vs height)</text>
+<text x="28.0" y="54.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">ipred_smooth_h (8bpc), pattern 1</text>
+<text x="24.0" y="268.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--muted)" transform="rotate(-90 24.0 268.0)">Cycles per row</text>
+<text x="540.0" y="496.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--muted)">Block width</text>
+<line x1="84.0" y1="450.0" x2="996.0" y2="450.0" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="454.0" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">0</text>
+<line x1="84.0" y1="328.7" x2="996.0" y2="328.7" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="332.7" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">500</text>
+<line x1="84.0" y1="207.3" x2="996.0" y2="207.3" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="211.3" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">1,000</text>
+<line x1="84.0" y1="86.0" x2="996.0" y2="86.0" style="stroke:var(--grid);stroke-width:1"/>
+<text x="74.0" y="90.0" font-size="11" text-anchor="end" font-weight="normal" style="fill:var(--muted)">1,500</text>
+<text x="175.2" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">W=4</text>
+<rect x="128.7" y="430.8" width="45.0" height="19.2" rx="4" style="fill:var(--c)"/>
+<text x="151.2" y="423.8" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">79</text>
+<rect x="176.7" y="434.1" width="45.0" height="15.9" rx="4" style="fill:var(--r)"/>
+<text x="199.2" y="427.1" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">65</text>
+<text x="357.6" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">W=8</text>
+<rect x="311.1" y="416.3" width="45.0" height="33.7" rx="4" style="fill:var(--c)"/>
+<text x="333.6" y="409.3" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">139</text>
+<rect x="359.1" y="432.9" width="45.0" height="17.1" rx="4" style="fill:var(--r)"/>
+<text x="381.6" y="425.9" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">70</text>
+<text x="540.0" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">W=16</text>
+<rect x="493.5" y="387.1" width="45.0" height="62.9" rx="4" style="fill:var(--c)"/>
+<text x="516.0" y="380.1" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">259</text>
+<rect x="541.5" y="431.1" width="45.0" height="18.9" rx="4" style="fill:var(--r)"/>
+<text x="564.0" y="424.1" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">78</text>
+<text x="722.4" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">W=32</text>
+<rect x="675.9" y="328.8" width="45.0" height="121.2" rx="4" style="fill:var(--c)"/>
+<text x="698.4" y="321.8" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">500</text>
+<rect x="723.9" y="426.1" width="45.0" height="23.9" rx="4" style="fill:var(--r)"/>
+<text x="746.4" y="419.1" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">98</text>
+<text x="904.8" y="472.0" font-size="12" text-anchor="middle" font-weight="normal" style="fill:var(--ink)">W=64</text>
+<rect x="858.3" y="212.4" width="45.0" height="237.6" rx="4" style="fill:var(--c)"/>
+<text x="880.8" y="205.4" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--c-ink)">979</text>
+<rect x="906.3" y="417.2" width="45.0" height="32.8" rx="4" style="fill:var(--r)"/>
+<text x="928.8" y="410.2" font-size="11" text-anchor="middle" font-weight="600" style="fill:var(--r-ink)">135</text>
+<line x1="84.0" y1="450.0" x2="996.0" y2="450.0" style="stroke:var(--axis);stroke-width:1.5"/>
+<rect x="888.0" y="24.0" width="12.0" height="12.0" rx="3" style="fill:var(--c)"/>
+<text x="906.0" y="34.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">C</text>
+<rect x="935.0" y="24.0" width="12.0" height="12.0" rx="3" style="fill:var(--r)"/>
+<text x="953.0" y="34.0" font-size="12" text-anchor="start" font-weight="normal" style="fill:var(--muted)">RVV</text>
+</svg>
